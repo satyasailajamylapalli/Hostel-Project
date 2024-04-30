@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>mess bills</title>
+  
+  
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+         
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+     <link rel="stylesheet" href="css/w3.css" />
+   
+        <style type="text/css">
+<!--
+.style3 {color: #FF0000; font-size: 10px; font-style: italic; }
+.style4 {color: #FF0000; font-size: 12px; font-style: italic; }
+.style5 {
+	color: #FF0000;
+	font-style: italic;
+}
+-->
+ </style>
+        <script type="text/javascript">
+            function redirect()
+            {
+                window.location.href="officehome.html";
+            }
+
+  function myfunc()
+ {
+ 
+ var num = /^[0-9]+$/;
+ var f=document.forms['form1'].elements['mess'].value;
+ if(f.match(num))
+ {
+   var g=document.forms['form1'].elements['elec'].value;
+ if(g.match(num))
+ {
+return true;
+ }
+ else
+ {
+  document.getElementById("errid1").innerHTML="*Use numbers only!";
+  document.forms['form1'].elements['elec'].value = "";
+  return false;
+  }
+
+ }
+ else
+ {
+  document.getElementById("errid").innerHTML="*Use numbers only!";
+  document.forms['form1'].elements['mess'].value = "";
+  return false;
+  }
+  
+ 
+}
+ </script>  
+
+</head>
+    <body>
+
+      <form name='form1' id='form1' action="newbills" method="post" onsubmit="return myfunc();">
+      
+          <h1><font color='indigo'>Monthly Mess Bills</font></h1><br>
+        
+        <fieldset>
+            <p></p><label>Mess</label>
+<select name="hmess"  required="required">
+  <option lable="select" selected disabled></option>
+  <option value="Amess">A Mess</option>
+  <option value="vasista">VASISTA</option>
+  <option value="nagavalli">NAGAVALLI</option>
+</select>
+            <p></p>	  <label>Month:</label>
+       <select name="month" required="required">
+          <option lable="select" selected disabled></option>
+          <option value="jan">january</option>
+          <option value="feb">february</option>
+          <option value="mar">march</option>
+          <option value="aprl">april</option>
+          <option value="may">may</option>
+          <option value="june">june</option>
+          <option value="july">july</option>
+          <option value="aug">august</option>
+          <option value="sept">september</option>
+          <option value="oct">october</option>
+          <option value="nov">november</option>
+          <option value="dec">december</option>
+        </select>
+        
+            <p></p>   <label>Year:</label>
+        <select name="year" required="required">
+          <option lable="select" selected disabled></option>
+		  <option value="2013">2013</option>
+          <option value="2014">2014</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value=2017>2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+		  <option value="2020">2020</option>
+		  <option value="2021">2021</option>
+		  <option value="2022">2022</option>
+		  <option value="2023">2023</option>
+		  <option value="2024">2024</option>
+		  <option value="2025">2025</option>
+		  <option value="2026">2026</option>
+        </select>
+            <p></p>
+     <label>Mess Charges:</label>
+		<input type="text" name="mess" id="mess" size="30">
+                 <p class="w3-small style5" id="errid" > </p> 
+     <label>Electrical Charges:</label>
+		<input type="text" name="elec" id="elec" size="30">
+ <p class="w3-small style5" id="errid1" > </p> 
+   <button type="button" name="back" style="width:100px"  class="w3-larger w3-button w3-round w3-indigo" value="back" onClick="redirect()" />back</button>      
+  <button  type="submit" style="width:100px" class="w3-xlarger w3-button w3-round w3-indigo" >Submit</button>
+  <br>   </fieldset>
+      
+  <br><br>
+<h3>aslo goto:</h3>
+<table>
+<tr>
+    <td><a href="officehome.html">home  </a><td><td>|</td>
+    <td><a href="registration.html">Registration</a><td> <td>|</td> <td><a href="payment.html">monthly bills </a><td><td>|</td> <td><a href="details.html">student details   </a><td>
+
+</tr></table>
+      </form>
+      
+    </body>
+</html>
+  
+  
+
+

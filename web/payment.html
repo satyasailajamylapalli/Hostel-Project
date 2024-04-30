@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      
+  
+  <meta charset="UTF-8">
+  <title>payment</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+ 
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/w3.css" />
+    <style type="text/css">
+<!--
+.style3 {color: #FF0000; font-size: 10px; font-style: italic; }
+.style4 {color: #FF0000; font-size: 12px; font-style: italic; }
+.style5 {
+	color: #FF0000;
+	font-style: italic;
+}
+-->
+ </style>
+ <script type="text/javascript">
+function redirect()
+            {
+                window.location.href="officehome.html";
+            }
+
+ function myfunc()
+ {
+ 
+ var num = /^[0-9]+$/;
+ var f=document.forms['form1'].elements['challan'].value;
+ if(f.match(num))
+ {
+   var g=document.forms['form1'].elements['amount'].value;
+ if(g.match(num))
+ {
+return true;
+ }
+ else
+ {
+  document.getElementById("errid1").innerHTML="*invalid input";
+  document.forms['form1'].elements['amount'].value = "";
+  return false;
+  }
+
+ }
+ else
+ {
+  document.getElementById("errid").innerHTML="* invalid input";
+  document.forms['form1'].elements['challan'].value = "";
+  return false;
+  }
+  
+ 
+}
+  
+</script>
+ </head>
+<body>
+
+
+
+<form id="form1" name="form1" method="post" action="payment" onsubmit="return myfunc();">
+    <h1><font color='indigo'> Monthly Mess Payment</font></h1><br>
+    <fieldset><br>
+         <label>Roll Number:</label>
+ <input type="text" name="rollno"   required />
+		 <label>Challan Number:</label>
+ <input type="text" name="challan"   required />
+  <p class="w3-small style5" id="errid" > </p> 
+		  <label>Date:</label>
+                   <input type="date" name="date"   required />
+      
+        
+     <label>Amount</label>
+         <input type="text" name="amount"   required />
+            <p class="w3-small style5" id="errid1" > </p> 
+            
+<button type="button" name="back" style="width:100px" class="w3-larger w3-button w3-round w3-indigo" value="back" onClick="redirect()" />back</button>
+         <input name="Submit" type="submit" style="width:100px" class="w3-xlarger w3-button w3-round w3-indigo" value="Submit"  />
+    </fieldset>
+    
+<br>
+<h3>aslo goto:</h3>
+<table>
+<tr>
+    <td><a href="officehome.html">home  </a><td><td>|</td>
+    <td><a href="registration.html">Registration</a><td> <td>|</td> <td><a href="payment.html">monthly bills </a><td><td>|</td> <td><a href="details.html">student details   </a><td>
+    
+</tr></table>
+</body>
+</html>

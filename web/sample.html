@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>sample</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="login" method="post">
+            <pre>
+            <input type="text" name="uname" placeholder="enter username" />
+            
+            <input type="text" name="pass" />
+            
+            <input type="submit" value="submit" />
+            </pre>
+        </form>
+        
+    </body>
+</html>
+String sample =request.getParameter("dob");                  
+            DateFormat forma=new SimpleDateFormat("yyyy-MM-dd");
+              java.util.Date date = forma.parse(sample);
+              SimpleDateFormat n1=new SimpleDateFormat("dd-MM-yyyy");
+              String fin= n1.format(date);
+              java.util.Date date2 = n1.parse(fin);
+              out.println(fin);
+              out.println(date2);
+              java.sql.Date dob=new java.sql.Date(date.getTime());
+              
+              
+              
+              if (course.equals("mca")){
+                 stmt2.execute("create table "+rollno+"rr(one Decimal(5,2),two Decimal(5,2),three Decimal(5,2),four Decimal(5,2),five Decimal(5,2),six Decimal(5,2))");
+                 } 
+            else  if (course.equals("mtech") || course.equals("mba")){
+            stmt2.execute("create table "+rollno+"rr(establish Decimal(5,2),roomrent Decimal(5,2),wc Decimal(5,2),tin_audit Decimal(5,2),challan Number(5),date Date)");
+                 } 
+            else{
+                stmt2.execute("create table "+rollno+"rr(one Decimal(5,2),two Decimal(5,2),three Decimal(5,2),four Decimal(5,2),five Decimal(5,2),six Decimal(5,2),seven Decimal(5,2),eight Decimal(5,2))");
+                }
+           ,month,details,boardingcharges,creditbal,duebal,remarks
+           ,'"+null+"',"+null+","+null+","+null+","+null+",'"+null+"')
+           
+           
+           //button hiding
+           
+           <!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Room Allocation</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+         <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/menu.css">
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css" />
+    <style type="text/css">
+<!--
+.style3 {color: #FF0000; font-size: 10px; font-style: italic; }
+.style4 {color: #FF0000; font-size: 12px; font-style: italic; }
+.style5 {
+	color: #FF0000;
+	font-style: italic;
+}
+-->
+ </style>
+        <script type="text/javascript">
+            
+
+function hideroomno()
+{
+    var x= document.getElementById('room');
+    x.style.display='none';
+    var s=document.getElementById('d1');
+    var t=document.getElementById('d2');
+      s.style.display='block'; 
+       if(t.style.display=='block')
+         {
+          t.style.display='none'; 
+            document.getElementById("room").required = false;
+        }
+        else
+        {
+            s.style.display='block';
+        }
+        
+            
+}
+
+function hideall()
+{
+    var x= document.getElementById('all');
+    x.style.display='none';
+    var s=document.getElementById('d2');
+         var t=document.getElementById('d1');
+         if(s.style.display == 'block')
+         {
+      s.style.display='none'; 
+         }
+         else
+         {
+             s.style.display='block';
+         }
+      t.style.display='none'; 
+        
+    
+    
+    
+          
+}
+            
+            
+            function redirect()
+            {
+                window.location.href="officehome.html";
+            }
+
+ function myfunc()
+ {
+ 
+ var num = /^[0-9]+$/;
+ var f=document.forms['form1'].elements['roomno'].value;
+ if(f.match(num))
+ {
+     return true;
+ }
+ else
+ {
+     document.getElementById("errid").innerHTML="* use numbers only";
+  document.forms['form1'].elements['roomno'].value = "";
+  return false;
+ }
+ }
+ </script>
+    </head>
+    <body>
+
+      <form name='form1' id='form1' action="rooms" method="post" onSubmit='return myfunc();'>
+      
+          <h1><font color='indigo'>Boys Room Details</font></h1>
+        
+          <p></p>
+     
+<button type="button" id='all' name="all" style="width:100px" class="w3-larger w3-button w3-round w3-indigo" value="all" onClick='return hideroomno();'/>all</button>
+<button type="button" id='room' name="room" style="width:100px" class="w3-larger w3-button w3-round w3-indigo" value="roomno" onClick='return hideall();' />roomnno</button>
+
+  <br>
+          
+          
+          <fieldset>
+               <div id='d1'> <legend><br><span class="number">></span>By Hostel</legend>
+          <label>
+      <input name="hostel" type="radio" value="nagavalli" id="radio1"/>
+      NAGAVALLI     </label>
+	  <label>
+	  <input name="hostel" type="radio" value="nagavalli_ext" id="radio2"/>
+       NAGAVALLI EXT</label>
+	   <label>
+	  <input name="hostel" type="radio" value="nivedita" id="radio3"/>
+        NIVEDITA </label>
+		</div>
+              
+         <div id='d2' style='display:none'> <legend><br><span class="number">></span>By Room Number</legend>
+          <label>
+      <input name="hostel" type="radio" value="nagavlli" id="radio1"/>
+      NAGAVALLI   </label>
+	  <label>
+	  <input name="hostel" type="radio" value="nagavalli_ext" id="radio2"/>
+       NAGAVALLI EXT </label>
+	   <label>
+	  <input name="hostel" type="radio" value="nivedita" id="radio3"/>
+        NIVEDITA  </label>
+		
+	  
+          
+        <label>Room Number:</label> <input type="text" id="roomno" name="roomno" size='30' notrequired/> 
+          <p class="w3-small style5" id="errid" > </p> </div>
+      
+<button type="button" name="back" style="width:100px" class="w3-larger w3-button w3-round w3-indigo" value="back" onClick="redirect()" />back</button>
+  <input name="Submit" type="submit" style="width:100px" class="w3-xlarger w3-button w3-round w3-indigo" value="Submit"  />
+         
+  <br>
+        
+          </fieldset>
+          <br>
+<h3>aslo goto:</h3>
+<table>
+<tr>
+    <td><a href="officehome.html">home  </a></td><td>|</td>
+    <td><a href="registration.html">Registration</a></td> <td>|</td> <td><a href="payment.html">monthly bills </a></td><td>|</td> <td><a href="details.html">student ledger   </a></td>
+    
+</tr></table>
+  
+      </form>
+      
+    </body>
+</html>
+  
+  
+
+

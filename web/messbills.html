@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+<title>monthly bills</title>
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<link rel="stylesheet" href="w3.css" />
+     
+	 <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.css">
+
+      <script src="js/jquery.mobilemenu.js"></script>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script>
+    $(document).ready(function(){
+        $('.menu').mobileMenu();
+    });
+    
+ 
+</script>
+
+<script type="text/JavaScript">
+function doSubmit(form)
+{
+ var urls=form['radio'];
+ var i=urls&&urls.length;
+ while(i--)
+ {
+  if(urls[i].checked)
+  {
+   window.location.href=urls[i].value;
+  }
+ }
+ return false;
+}
+</script>
+<style type="text/css">
+<!--
+.style4 {font-style: italic}
+.style5 {font-size: 24}
+-->
+>
+
+
+  </style>
+ 
+  </head>
+
+  <body>
+    <div class="header-wrapper">
+      <div class="site-name">
+<img src="img/download.png" alt="icon" align="left" height="15%" width="20%">
+        <h1>University College Of Engineering</h1>
+        <h3>Hostel management services</h3>
+     <h4>JNTUK KAKINADA<h4>
+</div>
+    </div>
+    <div class="menu">
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fw-icon-th-list"></i>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="registration.html">Registration</a></li>
+              <li><a href="monthlybills.html">Monthly Bill</a></li>
+              <li> <a  href="payment.html">payment</a>  </li>
+              <li><a href="details.html">Student Details</a></li>
+              <li><a href="contact us.html">login</a></li>
+            </ul>
+          </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+
+
+        <form id="form" name="form" method="post" action="bills"> 
+<table width="85%" height="100%"  align="center" bgcolor="#FFFFFF" class="w3-round-xxlarge">
+ 
+  <tr>
+    <td width="375" height="169" align="center" valign="bottom" ><span class="w3-xlarge"><em>MESS:</em></span>
+      <em>
+      <label>
+<select name="mess" class="w3-dropdown-click w3-xlarge" required>
+  <option lable="select" selected disabled></option>
+  <option value='vasista'>VASISTA</option>
+  <option value='nagavalli'>NAGAVALLI</option>
+  <option value='a'>A</option>
+</select>
+<br />
+      </label>
+            </em></td>
+    <td height="169" colspan="2" align="center" valign="bottom"  class="w3-xlarge style4"><span class="w3-xlarge"><em>MONTH: </em>
+        <label>
+       <select name="month"  class="w3-dropdown-click" required>
+          <option lable="select" selected disabled></option>
+          <option value='jan'>january</option>
+          <option value='feb'>february</option>
+          <option value='mar'>march</option>
+          <option value='aprl'> april</option>
+          <option value='may'>may</option>
+          <option value='june'>june</option>
+          <option value='july'>july</option>
+          <option value='aug'>august</option>
+          <option value='sept'>september</option>
+          <option value='oct'>october</option>
+          <option value='nov'>november</option>
+          <option value='dec'>december</option>
+        </select>
+        </label>
+    </span></td>
+    <td width="344" align="center" valign="bottom" class="w3-xlarge"  ><span class="w3-xlarge"><em>YEAR: </em></span>
+        <label>
+        <select name="year"  class="w3-dropdown-click w3-xlarge" required>
+          <option lable="select" selected disabled></option>
+          <option value='2017'>2017</option>
+          <option value='2018'>2018</option>
+          <option value='2019'>2019</option>
+          <option value='2020'>2020</option>
+          <option value='2021'>2021</option>
+          <option value='2022'>2022</option>
+          <option value='2023'>2023</option>
+        </select>
+      </label></td>
+    </tr>
+  <tr>
+    
+  <tr>
+    <td height="126" colspan="5" align="center" >
+      <label>
+      <input name="Submit" type="submit" class="w3-xlarger w3-button w3-round w3-red " value="Submit" onclick=""/>
+      </label>      </td>
+    </tr>
+</table>
+</form>
+<div >
+<p><em>Also goto<em><p>
+<table >
+<tr>
+<td><a href="officehome.html"> Home  </a><td>
+<td>
+<a href="registration.html">Registration</a><td>  <td><a href="monthlybills.html">monthly bills </a><td><td><a href="payment.html">payment</a><td><td><a href="details.html">student details   </a><td>
+
+</tr></table></div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+ <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+     <link rel="stylesheet" href="css/w3.css" />
+    </head>
+    <body>
+        <div class="header-wrapper">
+      <div class="site-name">
+<img src="img/download.png" alt="icon" align="left" height="20%" width="20%">
+        <h1>University College Of Engineering</h1>
+        <h3>Hostel management services</h3>
+     <h4>JNTUK KAKINADA</h4>
+</div>
+    </div>
+       <div class="container">
+
+            <ul id="nav" >
+                <li><a href="officehome.html"> Home</a></li>
+                <li><a href="registration.html"> Resitration</a></li>
+                <li><a href="#">Monthly bill </a>
+                    <div class="subs">
+                        <div class="col">
+                            <ul>
+                                 <li><a href="monthlybills.html"> New/Modifications</a></li>
+                                <li><a href="montlybills.html"> Bills</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Payment</a>
+                    <div class="subs">
+                        <div class="col">
+                            <ul>
+                                <li><a href="payment.html">Mess Bill</a>
+                                </li>
+                                <li><a href="roonrent.html">Room Rent</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="details.html">Student Ledger</a></li>
+                <li><a href="nocontent.html"> Student Details</a></li>
+                
+                  <li><a href="#">Room Allotment</a>
+                                    <div class="subs">
+                                    <div class="col">
+                                <ul>
+                                <li><a href="boys.html">Boys</a></li>
+                                <li><a href="girls.html">Girls</a></li>
+                            </ul>
+                                   </div>
+                                 </div>
+                              </li>
+                              <li><a href="index.html">Logout</a>
+            </ul>
+     </div>
+
+      <form action="regester" method="post">
+          <br>
+          <h1><font color="indigo">Registration Form</font></h1><br>
+        
+    <fieldset>
+        <legend><br><span class="number">1</span>Personal Information</legend>
+          <label for="rollno">Roll number:</label>
+          <input type="text" id="rollno" name="rollno" required/>
+          
+          <label for="name">Name</label>
+          <input type="text" id="sname" name="sname" required/>
+          
+          <label for="father">Father Name:</label>
+          <input type="text" id="fname" name="fname" required/>
+          
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="male" size="10">Male
+<input type="radio" name="gender" value="female" size="10">Female
+
+<br><br>
+
+<label>Date Of Birth</label>
+<input name="dob" type="date" required />
+
+<label>Cast:</label>
+          <input type="radio" name="cast" value="OC" size="10">OC
+<input type="radio" name="cast" value="BC" size="10">BC
+ <input type="radio" name="cast" value="SC" size="10">SC
+<input type="radio" name="cast" value="ST" size="10">ST
+
+<br><br>
+
+<label>Course</label>
+<select name="course">
+<option value="-1" selected>select..</option>
+<option value="BTech">B.TECH</option>
+<option value="MCA">MCA</option>
+<option value="MTech">M.TECH</option>
+<option value="MBA">MBA</option>
+<option value="BPhrm">B.Phrm</option>
+</select>
+
+       <label>Personal Address:</label>
+       <textarea id="address" name="address"></textarea><br>
+        </fieldset> <fieldset>
+       <legend><br><span class="number">2</span>Hostel Information</legend>
+<label>Scholarship:</label>
+<select name="scholar">
+<option value="-1" selected>select..</option>
+<option value="NA">NA</option>
+<option value="OC">OC</option>
+<option value="BC">BC</option>
+<option value="SC">SC</option>
+<option value="ST">ST</option>
+</select>
+
+<label>Hostel</label>
+<select name="hostel">
+<option value="-1" selected>select..</option>
+<option value="nalanda">NALANDA</option>
+<option value="nagarjuna">NAGARJUNA</option>
+<option value="narendra">NARENDRA</option>
+<option value="nagavalli">NAGAVALLI</option>
+<option value="nagavalli ext">NAGAVALLI EXT</option>
+<option value="nivedita">NIVEDITA</option>
+
+</select>
+<label>Room Number:</label>
+		<input type="text" name="roomno" id="roomno" size="30">
+
+		<label>Mess</label>
+<select name="mess">
+<option value="-1" selected>select..</option>
+<option value="Amess">A Mess</option>
+<option value="vasista">Vasista Mess</option>
+<option value="nagavalli">Nagavalli Mess</option>
+</select>
+  <label>Date of Joining</label>
+<input name="doj" type="date" required />
+ <label>C.M.R.NO:</label>
+          <input type="text" id="cmrno" name="cmrno" required/>
+           <label >Caution Money</label>
+          <input type="text" id="cm" name="cm" required/>
+		</fieldset>
+        <fieldset>
+            <legend><br><span class="number">3</span>Contact Information</legend>
+        <label>Email:</label>
+		<input type="text" name="email" id="email" size="30">
+		<label>Student MobileNo</label>
+<input type="text" name="smobno" id="studentno" size="30">
+<label>Parent MobileNo</label>
+<input type="text" name="pmobno" id="parentno" size="30">        
+        </fieldset><br>         
+<input name="Reset" style="width:100px" type="Reset" class="w3-larger w3-button w3-round w3-indigo" value="Reset">
+        <button type="submit" style="width:100px" class="w3-larger w3-button w3-round w3-indigo">Submit</button> 
+     
+      
+        <br><br>
+<h3>aslo goto:</h3>
+<table>
+<tr>
+    <td><a href="index.html">home  </a><td><td>|</td>
+    <td><a href="registration.html">Registration</a><td> <td>|</td> <td><a href="payment.html">monthly bills </a><td><td>|</td> <td><a href="details.html">student details   </a><td>
+    
+</tr></table></form>
+      
+    </body>
+</html>
+  
+  
+
+
